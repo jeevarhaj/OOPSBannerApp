@@ -5,7 +5,7 @@ public class OOPSBannerApp {
         
         String[] lines = new String[7];
 
-        // Populate array using String.join()
+        
         lines[0] = String.join(" ", " *** ",  " *** ",  " **** ", " ***** ");
         lines[1] = String.join(" ", "*   *", "*   *", "*   *", "*     ");
         lines[2] = String.join(" ", "*   *", "*   *", "*   *", "*     ");
