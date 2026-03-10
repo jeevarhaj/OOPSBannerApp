@@ -4,17 +4,15 @@ public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        // Step 1: Create character map
         HashMap<Character, String[]> charMap = createCharacterMap();
 
-        // Step 2: Display banner for OOPS
         displayBanner("OOPS", charMap);
     }
     public static HashMap<Character, String[]> createCharacterMap() {
 
         HashMap<Character, String[]> charMap = new HashMap<>();
 
-        // O pattern
+    
         charMap.put('O', new String[]{
                 " *** ",
                 "*   *",
@@ -23,7 +21,7 @@ public class OOPSBannerApp {
                 " *** "
         });
 
-        // P pattern
+        
         charMap.put('P', new String[]{
                 "**** ",
                 "*   *",
@@ -32,7 +30,7 @@ public class OOPSBannerApp {
                 "*    "
         });
 
-        // S pattern
+       
         charMap.put('S', new String[]{
                 " ****",
                 "*    ",
