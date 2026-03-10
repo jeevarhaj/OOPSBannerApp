@@ -1,6 +1,5 @@
 public class OOPSBannerApp {
 
-    /* Inner static class to store character-pattern mapping */
     static class CharacterPatternMap {
         private char character;
         private String[] pattern;
@@ -19,7 +18,6 @@ public class OOPSBannerApp {
         }
     }
 
-    /* Create mappings for O, P, S and space */
     public static CharacterPatternMap[] createCharacterPatternMaps() {
 
         String[] O = {
@@ -64,17 +62,16 @@ public class OOPSBannerApp {
         };
     }
 
-    /* Retrieve pattern for a character */
     public static String[] getCharacterPattern(char ch, CharacterPatternMap[] maps) {
         for (CharacterPatternMap m : maps) {
             if (m.getCharacter() == ch) {
                 return m.getPattern();
             }
         }
-        return maps[maps.length - 1].getPattern(); // return space if not found
+        return maps[maps.length - 1].getPattern(); 
     }
 
-    /* Print message banner */
+  
     public static void printMessage(String message, CharacterPatternMap[] maps) {
 
         int height = 7;
@@ -91,7 +88,7 @@ public class OOPSBannerApp {
         }
     }
 
-    /* Main method */
+    
     public static void main(String[] args) {
 
         CharacterPatternMap[] maps = createCharacterPatternMaps();
